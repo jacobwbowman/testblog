@@ -7,6 +7,4 @@ description: "A blog of likely insignificance"
 
 # Build settings
 remote_theme: jekyll/minima
-
-minima:
-  skin: dark
+skin: dark
