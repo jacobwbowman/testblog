@@ -1,8 +1,8 @@
 # Site settings
 title: Jacob Bowman's Super Simple Blog
 author:
- name: Jacob Bowman
- email: jake.bowman1018@gmail.com
+  name: Jacob Bowman
+  email: jake.bowman1018@gmail.com
 description: "A blog of likely insignificance"
 
 # Build settings
