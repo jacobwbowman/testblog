@@ -19,3 +19,27 @@ I am now using Liquid to code these following parts, such as inserting the title
 Now I'm including a photo on my about page with code from the _includes folder. You should see that below:
 
 {% include bull-trout.html %}
+
+More playing with Liquid will commence henceforth. Ooooh a for loop through a CSV file...
+
+{% for snack in site.data.animal %}
+- The {{ snack.food }} were consumed {{ snack.amount_eaten }} times.
+{% endfor %}
+
+Now an if statement:
+
+{% for snack in site.data.animal %}
+{% if snack.amount_eaten == "1" %}
+- <strong style="enjoyment: {{ snack.enjoyment }};">{{ snack.food }}</strong>
+{% else %}
+- <small>{{ snack.food }}</small>
+{% endif %}
+{% endfor %}
+
+Toying around again, now with the use of Liquid filters to subset data.
+
+{% assign enjoyable_foods = site.data.animal | where: "enjoyment", "9", "10" %}
+{% for snack in enjoyable_foods %}
+- {{ snack.food | upcase }}
+{% endfor %}
+
