@@ -38,7 +38,7 @@ Now an if statement:
 
 Toying around again, now with the use of Liquid filters to subset data.
 
-{% assign enjoyable_foods = site.data.animal | where: "enjoyment", "9", "10" %}
+{% assign enjoyable_foods = site.data.animal | where: "enjoyment", "10" %}
 {% for snack in enjoyable_foods %}
 - {{ snack.food | upcase }}
 {% endfor %}
